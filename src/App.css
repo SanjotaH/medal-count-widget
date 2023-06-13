@@ -1,0 +1,58 @@
+body {
+  font-family: "open sans", sans-serif;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-medal-data {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+thead th {
+  text-align: left;
+  border-bottom: 2px solid black;
+}
+.sprite {
+  display: inline-block;
+  width: 28px;
+  height: 17px;
+  background-color: #777;
+  background: url("images/flags.png") no-repeat;
+}
+thead th {
+  border: 0;
+  border-radius: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  margin-bottom: 1px;
+}
+
+thead th.gold {
+  border-top: 5px solid rgb(250, 208, 50);
+  display: inline-block;
+  margin-left: 1em;
+}
+thead th.silver {
+  border-top: 5px solid rgb(154, 165, 173);
+  display: inline-block;
+  margin-left: 1em;
+}
+thead th.bronze {
+  border-top: 5px solid rgb(128, 67, 21);
+  display: inline-block;
+  margin-left: 1em;
+}
+tbody td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #eee;
+}
