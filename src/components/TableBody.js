@@ -1,18 +1,18 @@
 import React from "react";
 const flagOrder = [
-  "USA",
-  "NOR",
-  "NED",
-  "FRA",
-  "SWE",
-  "ITA",
-  "CAN",
-  "SUI",
-  "RUS",
-  "BLR",
-  "GER",
   "AUT",
+  "BLR",
+  "CAN",
   "CHN",
+  "FRA",
+  "GER",
+  "ITA",
+  "NED",
+  "NOR",
+  "RUS",
+  "SUI",
+  "SWE",
+  "USA",
 ];
 const flagHeight = 17;
 
