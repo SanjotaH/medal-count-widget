@@ -7,12 +7,14 @@ function App() {
   const [error, setError] = useState(null);
   const getData = async function () {
     const response = await fetch(
-      "https://api.jsonbin.io/v3/b/64886eea8e4aa6225eadb7d2"
+      "https://raw.githubusercontent.com/SanjotaH/medal-count-widget/main/medal.json"
     );
+    console.log(response);
     if (response.status >= 200 && response.status < 400) {
       try {
         const actualData = await response.json();
-        return actualData.record;
+        console.log(actualData);
+        return actualData;
       } catch (error) {
         console.log(error);
         if (error) setError(error.message);
