@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import TableHead from "./TableHead";
 import TableBody from "./TableBody";
 
-const useSortableData = (items, config = { key: "gold" }) => {
+const useSortableData = (items, config = { key: "gold" || null }) => {
   const [sortConfig, setSortConfig] = useState(config);
 
   const sorter = (a, b) => {
@@ -55,7 +55,6 @@ const DataTable = ({ tableData }) => {
   ];
   return (
     <table className="table table-responsive table-medal-data">
-      <caption>Medals Count of all the Countries</caption>
       <TableHead
         columns={columns}
         requestSort={requestSort}

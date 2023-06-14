@@ -16,10 +16,12 @@ thead th {
   text-align: left;
   border-bottom: 2px solid black;
 }
+
 .sprite {
   display: inline-block;
   width: 28px;
   height: 17px;
+  margin: 0 10px;
   background-color: #777;
   background: url("images/flags.png") no-repeat;
 }
@@ -38,15 +40,37 @@ thead th.gold {
   display: inline-block;
   margin-left: 1em;
 }
+
+thead th span.gold {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(250, 208, 50);
+  border-radius: 50%;
+}
 thead th.silver {
   border-top: 5px solid rgb(154, 165, 173);
   display: inline-block;
   margin-left: 1em;
 }
+thead th span.silver {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(154, 165, 173);
+  border-radius: 50%;
+}
 thead th.bronze {
   border-top: 5px solid rgb(128, 67, 21);
   display: inline-block;
   margin-left: 1em;
+}
+thead th span.bronze {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(128, 67, 21);
+  border-radius: 50%;
 }
 tbody td {
   padding: 0.5em;

@@ -30,16 +30,18 @@ const TableBody = ({ items }) => {
     <tbody>
       {items.map((item, index) => (
         <tr key={index}>
-          <td>{index + 1}</td>
-          <td style={{ width: "25px" }}>
-            <div
+          <td></td>
+          <td>
+            <span>{index + 1} </span>
+            <span
               style={{
                 backgroundPosition: "0 " + getflagOrder(item.code) + "px",
               }}
               className="sprite"
-            ></div>
+            ></span>
+            {item.code}
           </td>
-          <td style={{ textAlign: "left" }}>{item.code}</td>
+          <td style={{ textAlign: "left" }}></td>
           <td>{item.gold}</td>
           <td>{item.silver}</td>
           <td>{item.bronze}</td>

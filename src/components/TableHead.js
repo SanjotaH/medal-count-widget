@@ -5,12 +5,12 @@ const TableHead = ({ columns, requestSort, getClassNamesFor }) => {
     <thead>
       <tr>
         <th></th>
-        <th></th>
-        {columns.map((column) => {
+        <th>Medals Count</th>
+        {columns.map((column, index) => {
           return (
             <>
               <th
-                key={column.accessor}
+                key={index}
                 onClick={() => requestSort(column.accessor)}
                 className={
                   getClassNamesFor(column.accessor) === column.accessor
@@ -18,7 +18,9 @@ const TableHead = ({ columns, requestSort, getClassNamesFor }) => {
                     : null
                 }
               >
-                {column.label}
+                <span className={column.accessor}>
+                  {column.label === "Total" ? "Total" : null}
+                </span>
               </th>
             </>
           );
