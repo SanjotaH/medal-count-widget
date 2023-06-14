@@ -1,4 +1,4 @@
-{"medalData": [{
+[{
     "code": "USA",
     "gold": 9,
     "silver": 7,
@@ -76,4 +76,4 @@
     "silver": 4,
     "bronze": 2
   }
- ]}
+ ]

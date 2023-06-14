@@ -9,7 +9,6 @@ function App() {
     const response = await fetch(
       "https://raw.githubusercontent.com/SanjotaH/medal-count-widget/main/medal.json"
     );
-    console.log(response);
     if (response.status >= 200 && response.status < 400) {
       try {
         const actualData = await response.json();
@@ -34,7 +33,7 @@ function App() {
         if (err) setError(err.message);
       });
     return () => {};
-  }, [tableData]);
+  }, []);
   if (error) return <ErrorHandler error={error} />;
   return (
     <>
